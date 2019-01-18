@@ -1,0 +1,531 @@
+/* Core CSS */
+
+:root {
+    --main-color: #03c5ca;
+    --darker: #083e64;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #efefef !important;
+    margin: 0;
+}
+
+
+/* MOBILE */
+
+
+/* Header section */
+
+header .container {
+    display: flex;
+}
+
+header .menu {
+    align-self: center;
+    margin-left: auto;
+}
+
+.menu-toggle {
+    background: transparent;
+    border: 0;
+}
+
+.menu-dropdown {
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+.menu .nav-menu {
+    background: var(--main-color);
+    border: 1px solid #fff;
+    list-style: none;
+    padding: 0;
+}
+
+.menu .nav-item {
+    border-bottom: 1px solid #fff;
+}
+
+.menu .nav-item:last-child {
+    border-bottom: 0;
+}
+
+.menu .nav-link {
+    color: #fff;
+    font-weight: bold;
+}
+
+.menu.is-open .menu-dropdown {
+    display: block;
+}
+
+
+/* Home section */
+
+.home .box-title {
+    margin-left: 0.5rem;
+}
+
+.home .box-title h2 {
+    font-size: 1.6rem;
+}
+
+.home .box-title p {
+    font-size: 0.9rem;
+    margin-top: 0;
+}
+
+
+/* News section */
+
+.news h2 {
+    text-align: center;
+    position: relative;
+    padding: 1rem;
+    margin: 2rem;
+    margin-bottom: 3rem;
+}
+
+.news h2:before {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 3px;
+    background: #03c5ca;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.news h2:after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: white;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 3px solid #03c5ca;
+}
+
+.news .box-img .link .bo {
+    position: relative;
+    display: inline-block;
+}
+
+.news .box-img .link .bo:before {
+    content: none;
+    display: block;
+    box-shadow: 0 0 0 5px #03c5ca inset;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.news .box-img .link .bo img {
+    filter: grayscale(100%);
+    transition: 0.5s all ease-in-out;
+}
+
+.news .box-img .link figcaption {
+    text-decoration: none;
+    padding: .5rem;
+}
+
+.news h3,
+p {
+    transition: 0.5s all ease-in-out;
+}
+
+.news h3 {
+    color: black;
+    font-size: 1.25rem;
+}
+
+.news date {
+    color: gray;
+}
+
+.news p {
+    color: gray;
+    font-size: 0.9rem;
+}
+
+.news .box-img:hover .link {
+    text-decoration: none;
+}
+
+.news .box-img:hover .link .bo:before {
+    content: "";
+}
+
+.news .box-img:hover .link .bo img {
+    filter: grayscale(0);
+}
+
+.news .box-img:hover .link figcaption h3 {
+    color: #03c5ca;
+}
+
+.news .box-img:hover .link figcaption p {
+    color: black;
+}
+
+
+/* Dinh huong section */
+
+.dinh-huong {
+    background: url("../img/background-img-1.png");
+    background-size: cover;
+    padding-bottom: 6rem;
+    background-position: 50% 65%;
+}
+
+.dinh-huong .box-h2 {
+    padding: 3rem 0;
+}
+
+.dinh-huong .box-h2 h2 {
+    text-align: center;
+    position: relative;
+    padding: 1rem;
+    margin: 2rem;
+    margin-bottom: 3rem;
+    font-size: 1.4rem;
+}
+
+.dinh-huong .box-h2 h2:before {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 3px;
+    background: #03c5ca;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dinh-huong .box-h2 h2:after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: white;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 3px solid #03c5ca;
+}
+
+.dinh-huong .centered {
+    text-align: center;
+}
+
+.dinh-huong .link {
+    color: black;
+    transition: 0.5s all ease-in-out;
+}
+
+.dinh-huong .link i {
+    display: inline-block;
+    text-align: left;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
+
+.dinh-huong .link:hover {
+    text-decoration: none;
+    color: #03c5ca;
+}
+
+.dinh-huong .info h3 {
+    color: #000000ad;
+    font-size: 1.4rem;
+}
+
+.dinh-huong .info p {
+    color: #000000ad;
+    font-size: 0.9rem;
+}
+
+.xem-them figure {
+    text-align: center;
+}
+
+.xem-them figure img {
+    background: black;
+}
+
+.xem-them figure p {
+    text-align: left;
+    padding: 10px;
+}
+
+
+/* Xem-them section */
+
+.xem-them figure a {
+    background: #03c5cabf;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 50px;
+}
+
+.xem-them figure a:hover {
+    text-decoration: none;
+    background: #03c5ca;
+}
+
+
+/* Reviews section */
+
+.reviews {
+    text-align: center;
+    background: url("../img/background-img-3.png");
+    padding: 2rem 0;
+}
+
+.reviews h2 {
+    position: relative;
+    padding: 1rem;
+    margin: 2rem;
+    margin-bottom: 3rem;
+}
+
+.reviews h2:before {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 3px;
+    background: #03c5ca;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.reviews h2:after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: white;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 3px solid #03c5ca;
+}
+
+.reviews figure {
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.reviews .info h3 {
+    color: #03c5ca;
+}
+
+.reviews .info .details {
+    font-weight: bold;
+}
+
+
+/* Footer */
+
+.links {
+    background: #03c5ca;
+    padding: 1.25rem 1rem;
+}
+
+.links h2 {
+    color: #083e64;
+    font-size: 1.5rem;
+}
+
+.links p {
+    color: #ffffffad;
+    font-size: 0.9rem;
+}
+
+.links .link {
+    display: inline-block;
+}
+
+.links .link:hover {
+    text-decoration: none;
+}
+
+.links .link p:hover {
+    color: white;
+}
+
+.copyright {
+    background: #083e64;
+    color: white;
+    text-align: center;
+    line-height: 3rem;
+}
+
+.copyright ul {
+    margin: 0;
+}
+
+.copyright ul li {
+    display: inline;
+}
+
+.copyright ul li a {
+    padding: 0 0.5rem;
+}
+
+.copyright ul li a i {
+    width: 2rem;
+    height: 2rem;
+    background: #ffffff73;
+    line-height: 2rem;
+    border-radius: 50%;
+}
+
+.copyright ul li:hover i {
+    background: white;
+    cursor: pointer;
+}
+
+
+/* MEDIA QUERRIES */
+
+@media (max-width: 576px) {
+    .news .box-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .news figcaption {
+        width: 24em;
+    }
+    .dinh-huong {
+        background: #efefef;
+    }
+    .reviews .info {
+        width: 100%;
+        padding: 0 1em;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .news .box-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .news figcaption {
+        width: 24em;
+    }
+}
+
+@media (min-width: 576px) {
+    .menu .menu-dropdown {
+        z-index: 1;
+    }
+    .home figure {
+        position: relative;
+    }
+    .home .box-title {
+        position: absolute;
+        top: 78%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        margin: 0;
+    }
+    .xem-them figure {
+        position: relative;
+        margin: 0;
+    }
+    .xem-them .info {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+    }
+    .xem-them .info p {
+        text-align: center;
+    }
+    .reviews .info {
+        width: 100%;
+        padding: 0 1em;
+    }
+    .news figcaption {
+        padding: 0 !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+    .menu-dropdown {
+        display: block;
+        position: static;
+    }
+    header .container {
+        display: flex;
+    }
+    header .menu {
+        margin-left: auto;
+    }
+    header .nav-menu {
+        display: flex;
+        margin: 0;
+        background: #efefef !important;
+        border: 0 !important;
+    }
+    .nav-menu .nav-link {
+        color: black;
+        font-weight: bold;
+        margin: .5em 0;
+    }
+    .nav-menu .nav-item:hover .nav-link {
+        color: #fff;
+        background: var(--main-color);
+    }
+}
+
+@media (min-width: 992px) {
+    .reviews .info {
+        padding: 0 10em;
+    }
+    .copyright ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .xem-them .info {
+        font-size: 1.5em;
+    }
+}
